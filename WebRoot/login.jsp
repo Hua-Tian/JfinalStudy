@@ -8,10 +8,16 @@
 </head>
 <body>
 	<form action="/user/login" method="post">
-		ユーザー：<input name="user.userName" type="text">
+		ユーザー：<input name="userName" type="text" value="${userName}"><font color="red">${nameMsg}</font>
 		</br>
-		密码：<input name="user.userPass" type="password">
-		<input type="submit" value="提交">
+		密码：<input name="userPass" type="password"><font color="red">${passMsg}</font>
+		</br>
+		邮箱：<input type="text" name="email" value="${email}"><font color="red">${emailMsg}</font>
+		</br>
+		电话：<input type="text" name="phone" value="${phone}"><font color="red">${phoneMsg}</font>
+		</br><input type="submit" value="提交">
 	</form>
+	<br/>
+	学生姓名：${userName}<br/>所属班级：${userClass}
 </body>
 </html>

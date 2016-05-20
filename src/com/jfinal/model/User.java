@@ -1,8 +1,8 @@
 package com.jfinal.model;
 
-import com.jfinal.plugin.activerecord.Model;
+import com.jfinal.model.base.BaseUser;
 
-public class User extends Model<User>{
+public class User extends BaseUser<User>{
 	/**
 	 * 
 	 */
